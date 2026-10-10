@@ -1,4 +1,4 @@
-import { configure } from 'mobx';
+configure } from 'mobx';
 import ReactDOM from 'react-dom/client';
 import { AuthWrapper } from './app/AuthWrapper';
 // Removed AnalyticsInitializer import - analytics dependency removed
