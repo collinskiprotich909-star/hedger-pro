@@ -1,4 +1,9 @@
-Builder preview branding (incl. PREVIEW_READY handshake) is handled by the
-// src/preview/ listener, mounted from app-content only in the preview deployment
-// (NEXT_PUBLIC_APP_BUILD === 'true') and stripped from standalone partner deploys.
-ReactDOM.createRoot(document.getElementById('root')!).render(<AuthWrapper />);
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
